@@ -12,6 +12,8 @@ extern "C" {
 // absolute time is required in both directions. Could supply utilities to
 // manage this...
 
+VAL_EXPORT double getTime(void *validator);
+
 // Execute next happening on time line
 VAL_EXPORT bool executeNext(void *validator);
 

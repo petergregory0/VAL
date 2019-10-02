@@ -1,0 +1,20 @@
+{{domain.name}} - {{problem.name}}({{problem.domain_name}}) Time ({{params.time}})
+
+{% for objects in problem.objects|groupby(attribute='type') %}
+  {{objects.list|join(' ','name')}} - {{objects.grouper}}
+{% endfor %}
+
+{% for item in problem.initial_state|sort(attribute='predicate') %}
+({{item.predicate}} {{item.arguments|join(' ')}}) {% endfor %}
+
+{% for item in problem.initial_state_assignments|sort(attribute='function') %}
+(= ({{item.function}} {{item.arguments|join(' ')}}) {{item.assignment}}) {% endfor %}
+
+{% for a in plan %}
+{{a.time|time_at}}: {{a.action}} [{{a.duration}}hrs]
+{% endfor %}
+
+{% for t in range(0,150,24) %}
+Day {{t/24}}: {% for a in plan if a.time > t and a.time <= t+24  %} {{a.action}} {{a.time|round|int}} {% endfor %}
+
+{% endfor %}

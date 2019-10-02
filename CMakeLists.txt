@@ -261,6 +261,7 @@ if( ${VERIFY_SYMBOLS} )
     add_executable(ValStep2 ${VALSTEP_SOURCE_FILES} ${LIB_VAL_SOURCE_FILES})
 endif()
 
+
 # ValueSeq
 set(VALUE_SEQ_SOURCE_FILES
     ${APPLICATIONS_DIR}/ValueSeq/src/main.cpp)

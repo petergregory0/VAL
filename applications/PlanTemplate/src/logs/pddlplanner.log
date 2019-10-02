@@ -1,0 +1,156 @@
+2019-09-20 16:35:50.579 [main] DEBUG - Java version: 1.8.0_212
+2019-09-20 16:35:50.598 [main] DEBUG - PddlPlannerConfig(C:\Users\pgregory\AppData\Local\Temp\domain-123765TMx3E4E9vhh.pddl,C:\Users\pgregory\AppData\Local\Temp\problem-123760NUzqcBFW0d4.pddl,false,0,1,NaN,0.0,0.001,,UNSPECIFIED,UNSPECIFIED,false,false,false,Default,HASH,,false,false,false,false,false,false,RPOnly,MAX,,,TASKS,,,,HOUR)
+2019-09-20 16:35:50.950 [main] INFO  - Planning domain driverlog problem dlog-2-2-2 with epsilon 0.001
+2019-09-20 16:35:50.953 [main] DEBUG - Transforming problem dlog-2-2-2 with driverlog to Engine model
+2019-09-20 16:35:51.035 [main] DEBUG - Transforming domain driverlog to the Engine model
+2019-09-20 16:35:51.041 [main] DEBUG - Found 6 types
+2019-09-20 16:35:51.042 [main] DEBUG - Found 0 objects
+2019-09-20 16:35:51.043 [main] DEBUG - Found 6 predicate (boolean) variables
+2019-09-20 16:35:51.071 [main] DEBUG - Found 0 numeric fluent (double) variables
+2019-09-20 16:35:51.073 [main] DEBUG - Found 0 derived boolean variables
+2019-09-20 16:35:51.075 [main] DEBUG - Found 0 derived numeric variables
+2019-09-20 16:35:51.185 [main] DEBUG - Transforming problem dlog-2-2-2 to the Engine model
+2019-09-20 16:35:51.186 [main] DEBUG - Found 11 objects
+2019-09-20 16:35:51.209 [main] DEBUG - Metric: (minimize (total-time))
+2019-09-20 16:35:51.223 [main] INFO  - Setting LP running continuous effect extrapolation to MAX
+2019-09-20 16:35:52.067 [main] DEBUG - Using Partial Order Scheduling
+2019-09-20 16:35:52.068 [main] INFO  - Ordering state queue by UNSPECIFIED
+2019-09-20 16:35:52.092 [main] INFO  - Using Skip to Relevant Layer Relaxed Plan Extraction mode.
+2019-09-20 16:35:52.092 [main] INFO  - Using Hashcode Sorted Achiever Set.
+2019-09-20 16:35:52.093 [main] INFO  - Using only helpful actions that appear in the relaxed plan.
+2019-09-20 16:35:52.101 [main] DEBUG - Using Static Analysis Grounder
+2019-09-20 16:35:52.101 [main] INFO  - Setting Stopping criteria to search for up to 1 plans.
+2019-09-20 16:35:52.117 [main] INFO  - Starting to plan...
+2019-09-20 16:35:52.143 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0
+2019-09-20 16:35:52.146 [main] DEBUG - Starting Calculated variable compilation pre-processor.
+2019-09-20 16:35:52.160 [main] INFO  - Finished Calculated variable compilation pre-processor. Took 8 ms.
+2019-09-20 16:35:52.160 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0
+2019-09-20 16:35:52.161 [main] DEBUG - Starting ForAll conditions and effects pre-processor.
+2019-09-20 16:35:52.169 [main] INFO  - Finished ForAll conditions and effects pre-processor. Took 8 ms.
+2019-09-20 16:35:52.169 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0
+2019-09-20 16:35:52.170 [main] DEBUG - Starting Normalising expressions to DNF pre-processor.
+2019-09-20 16:35:52.177 [main] INFO  - Finished Normalising expressions to DNF pre-processor. Took 7 ms.
+2019-09-20 16:35:52.177 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0
+2019-09-20 16:35:52.179 [main] DEBUG - Starting DisjunctionPreProcessor pre-processor.
+2019-09-20 16:35:52.180 [main] INFO  - Finished DisjunctionPreProcessor pre-processor. Took 1 ms.
+2019-09-20 16:35:52.183 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.184 [main] DEBUG - Starting NumericNormalisationPreProcessor pre-processor.
+2019-09-20 16:35:52.202 [main] INFO  - Finished NumericNormalisationPreProcessor pre-processor. Took 18 ms.
+2019-09-20 16:35:52.202 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.205 [main] DEBUG - Starting InvariantPreProcessor pre-processor.
+2019-09-20 16:35:52.209 [ForkJoinPool.commonPool-worker-2] DEBUG - Regressing condition as is: at ?truck - truck ?loc - location
+2019-09-20 16:35:52.209 [ForkJoinPool.commonPool-worker-11] DEBUG - Regressing condition as is: at ?truck - truck ?loc - location
+2019-09-20 16:35:52.209 [ForkJoinPool.commonPool-worker-9] DEBUG - Regressing condition as is: driving ?driver - driver ?truck - truck
+2019-09-20 16:35:52.209 [ForkJoinPool.commonPool-worker-13] DEBUG - Regressing condition as is: at ?truck - truck ?loc - location
+2019-09-20 16:35:52.209 [ForkJoinPool.commonPool-worker-4] DEBUG - Regressing condition as is: at ?truck - truck ?loc - location
+2019-09-20 16:35:52.210 [main] INFO  - Finished InvariantPreProcessor pre-processor. Took 5 ms.
+2019-09-20 16:35:52.210 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.211 [main] DEBUG - Starting Timed Action Pre-processor pre-processor.
+2019-09-20 16:35:52.214 [main] INFO  - Finished Timed Action Pre-processor pre-processor. Took 3 ms.
+2019-09-20 16:35:52.214 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.214 [main] DEBUG - Starting LiftedMetaDataPreProcessor pre-processor.
+2019-09-20 16:35:52.225 [main] INFO  - Finished LiftedMetaDataPreProcessor pre-processor. Took 11 ms.
+2019-09-20 16:35:52.226 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.226 [main] DEBUG - Starting SingleShotActionPreProcessor pre-processor.
+2019-09-20 16:35:52.235 [main] INFO  - Finished SingleShotActionPreProcessor pre-processor. Took 9 ms.
+2019-09-20 16:35:52.235 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.236 [main] DEBUG - Starting VariableVolatilityPreProcessor pre-processor.
+2019-09-20 16:35:52.241 [main] INFO  - Finished VariableVolatilityPreProcessor pre-processor. Took 5 ms.
+2019-09-20 16:35:52.241 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.241 [main] DEBUG - Starting Grounder pre-processor.
+2019-09-20 16:35:52.244 [main] INFO  - Performing static analysis.
+2019-09-20 16:35:52.253 [main] INFO  - Finished static analysis.
+2019-09-20 16:35:52.253 [main] DEBUG - Grounding problem
+2019-09-20 16:35:52.253 [main] DEBUG - Grounding instant actions ...
+2019-09-20 16:35:52.259 [main] DEBUG - Grounded 0 instant actions
+2019-09-20 16:35:52.260 [main] DEBUG - Grounding durative actions ...
+2019-09-20 16:35:52.301 [ForkJoinPool.commonPool-worker-11] DEBUG - Grounded disembark-truck to 20 grounded actions
+2019-09-20 16:35:52.302 [ForkJoinPool.commonPool-worker-9] DEBUG - Grounded board-truck to 20 grounded actions
+2019-09-20 16:35:52.309 [ForkJoinPool.commonPool-worker-2] DEBUG - Grounded load-truck to 20 grounded actions
+2019-09-20 16:35:52.311 [ForkJoinPool.commonPool-worker-13] DEBUG - Grounded unload-truck to 20 grounded actions
+2019-09-20 16:35:52.317 [main] DEBUG - Grounded walk to 16 grounded actions
+2019-09-20 16:35:52.329 [ForkJoinPool.commonPool-worker-4] DEBUG - Grounded drive-truck to 24 grounded actions
+2019-09-20 16:35:52.329 [main] DEBUG - Grounded 120 durative actions
+2019-09-20 16:35:52.334 [main] DEBUG - Constructing new preprocessed domain
+2019-09-20 16:35:52.338 [main] DEBUG - Constructing new preprocessed problem
+2019-09-20 16:35:52.345 [main] INFO  - Finished Grounder pre-processor. Took 102 ms.
+2019-09-20 16:35:52.345 [main] DEBUG - Instant actions: 0, Durative actions: 6, Combined Instant actions: 12, Variables: 6, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.346 [main] DEBUG - Starting Sometimes-constraint compilation pre-processor.
+2019-09-20 16:35:52.353 [main] INFO  - Finished Sometimes-constraint compilation pre-processor. Took 7 ms.
+2019-09-20 16:35:52.353 [main] DEBUG - Instant actions: 0, Durative actions: 120, Combined Instant actions: 240, Variables: 54, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.354 [main] DEBUG - Starting GroundedMetaDataPreProcessor pre-processor.
+2019-09-20 16:35:52.369 [main] INFO  - Finished GroundedMetaDataPreProcessor pre-processor. Took 15 ms.
+2019-09-20 16:35:52.369 [main] DEBUG - Instant actions: 0, Durative actions: 120, Combined Instant actions: 240, Variables: 54, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.369 [main] DEBUG - Starting Constant variable elimination pre-processor.
+2019-09-20 16:35:52.385 [main] INFO  - Finished Constant variable elimination pre-processor. Took 16 ms.
+2019-09-20 16:35:52.385 [main] DEBUG - Instant actions: 0, Durative actions: 120, Combined Instant actions: 240, Variables: 54, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.385 [main] DEBUG - Starting NumericNormalisationPreProcessor pre-processor.
+2019-09-20 16:35:52.393 [main] INFO  - Finished NumericNormalisationPreProcessor pre-processor. Took 7 ms.
+2019-09-20 16:35:52.393 [main] DEBUG - Instant actions: 0, Durative actions: 120, Combined Instant actions: 240, Variables: 54, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.394 [main] DEBUG - Starting DependencyAnalyserPreProcessor pre-processor.
+2019-09-20 16:35:52.427 [main] INFO  - Finished DependencyAnalyserPreProcessor pre-processor. Took 33 ms.
+2019-09-20 16:35:52.428 [main] DEBUG - Instant actions: 0, Durative actions: 120, Combined Instant actions: 240, Variables: 54, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.428 [main] DEBUG - Starting Directionality analyzer pre-processor.
+2019-09-20 16:35:52.430 [main] INFO  - Metric is monotonic: true
+2019-09-20 16:35:52.435 [main] INFO  - Finished Directionality analyzer pre-processor. Took 7 ms.
+2019-09-20 16:35:52.435 [main] DEBUG - Instant actions: 0, Durative actions: 120, Combined Instant actions: 240, Variables: 54, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.436 [main] DEBUG - Starting DurationDependentEffectPreProcessor pre-processor.
+2019-09-20 16:35:52.437 [main] DEBUG - Analyzing domain driverlog for continuous effects
+2019-09-20 16:35:52.438 [main] DEBUG - Finished analyzing for continuous effects. Took 1ms
+2019-09-20 16:35:52.441 [main] INFO  - Finished DurationDependentEffectPreProcessor pre-processor. Took 5 ms.
+2019-09-20 16:35:52.442 [main] DEBUG - Instant actions: 0, Durative actions: 120, Combined Instant actions: 240, Variables: 54, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.442 [main] DEBUG - Starting LandmarksAnalyserPreProcessor pre-processor.
+2019-09-20 16:35:52.482 [main] DEBUG - Marking problem goals as landmarks.
+2019-09-20 16:35:52.484 [main] DEBUG - Analysing Landmarks
+2019-09-20 16:35:52.487 [main] DEBUG - Analysed at truck1 s1 : LandmarkFact{fact=(at truck1 s1), initiallySatisfied=false, goal=true, achievers=[(drive-truck truck1 s2 s1 driver2 end,drive-truck truck1 s2 s1 driver1 end,drive-truck truck1 s0 s1 driver1 end,drive-truck truck1 s0 s1 driver2 end)], deleters=[(drive-truck truck1 s1 s2 driver1 start,drive-truck truck1 s1 s2 driver2 start,drive-truck truck1 s1 s0 driver1 start,drive-truck truck1 s1 s0 driver2 start)]}
+2019-09-20 16:35:52.488 [main] DEBUG - Found 4 achievers and 4 deleters for landmark (at truck1 s1)
+2019-09-20 16:35:52.488 [main] DEBUG - Analysed at package1 s0 : LandmarkFact{fact=(at package1 s0), initiallySatisfied=true, goal=true, achievers=[(unload-truck package1 truck1 s0 end,unload-truck package1 truck2 s0 end)], deleters=[(load-truck package1 truck1 s0 start,load-truck package1 truck2 s0 start)]}
+2019-09-20 16:35:52.488 [main] DEBUG - Found 2 achievers and 2 deleters for landmark (at package1 s0)
+2019-09-20 16:35:52.489 [main] DEBUG - Analysed at package2 s0 : LandmarkFact{fact=(at package2 s0), initiallySatisfied=true, goal=true, achievers=[(unload-truck package2 truck2 s0 end,unload-truck package2 truck1 s0 end)], deleters=[(load-truck package2 truck1 s0 start,load-truck package2 truck2 s0 start)]}
+2019-09-20 16:35:52.489 [main] DEBUG - Found 2 achievers and 2 deleters for landmark (at package2 s0)
+2019-09-20 16:35:52.489 [main] DEBUG - Analysed at driver1 s1 : LandmarkFact{fact=(at driver1 s1), initiallySatisfied=false, goal=true, achievers=[(disembark-truck driver1 truck1 s1 end,walk driver1 p1-0 s1 end,walk driver1 p1-2 s1 end,disembark-truck driver1 truck2 s1 end)], deleters=[(board-truck driver1 truck2 s1 start,walk driver1 s1 p1-0 start,board-truck driver1 truck1 s1 start,walk driver1 s1 p1-2 start)]}
+2019-09-20 16:35:52.489 [main] DEBUG - Found 4 achievers and 4 deleters for landmark (at driver1 s1)
+2019-09-20 16:35:52.489 [main] INFO  - Identified 4 landmark facts and 0 landmark actions.
+2019-09-20 16:35:52.491 [main] INFO  - Finished LandmarksAnalyserPreProcessor pre-processor. Took 48 ms.
+2019-09-20 16:35:52.491 [main] DEBUG - Instant actions: 0, Durative actions: 120, Combined Instant actions: 240, Variables: 54, Constants: 0, Objects: 11, Initial values: 22, Constraints: 0, Goals: 4
+2019-09-20 16:35:52.509 [main] INFO  - Initialised search for domain 'driverlog' with problem 'dlog-2-2-2'
+2019-09-20 16:35:52.509 [main] INFO  - Searching driverlog dlog-2-2-2 using Enforced Hill Climbing
+2019-09-20 16:35:52.512 [main] DEBUG - Initial state variable (after external constraint solver): at driver1 s2, at driver2 s2, at package1 s0, at package2 s0, at truck1 s0, at truck2 s0, empty truck1, empty truck2, link s0 s1, link s0 s2, link s1 s0, link s1 s2, link s2 s0, link s2 s1, path p1-0 s0, path p1-0 s1, path p1-2 s1, path p1-2 s2, path s0 p1-0, path s1 p1-0, path s1 p1-2, path s2 p1-2
+2019-09-20 16:35:52.620 [main] INFO  - Initial Heuristic: 12, 91.0060
+2019-09-20 16:35:52.847 [main] DEBUG - Memoiser statistics: 
+2019-09-20 16:35:52.848 [main] INFO  - Found plan for C:\Users\pgregory\AppData\Local\Temp\domain-123765TMx3E4E9vhh.pddl C:\Users\pgregory\AppData\Local\Temp\problem-123760NUzqcBFW0d4.pddl
+2019-09-20 16:35:52.849 [main] DEBUG - Beginning to extract plan tasks...
+2019-09-20 16:35:52.857 [main] DEBUG - Tightened STN from the initial state transition
+2019-09-20 16:35:52.862 [main] DEBUG - Done extracting durativeHappenings
+2019-09-20 16:35:52.864 [main] DEBUG - Updated start constraints
+2019-09-20 16:35:52.865 [main] DEBUG - Done extracting plan tasks.
+2019-09-20 16:35:52.869 [main] DEBUG - Printed plan for C:\Users\pgregory\AppData\Local\Temp\domain-123765TMx3E4E9vhh.pddl C:\Users\pgregory\AppData\Local\Temp\problem-123760NUzqcBFW0d4.pddl
+2019-09-20 16:35:52.869 [main] INFO  - 
+Printing plan for this domain and problem:
+Domain: driverlog
+Problem: dlog-2-2-2
+Plan was found:
+Metric: 92.0070
+ 0.0010: (walk driver1 s2 p1-2)  [20.0000]
+20.0020: (walk driver1 p1-2 s1)  [20.0000]
+40.0030: (walk driver1 s1 p1-0)  [20.0000]
+60.0040: (walk driver1 p1-0 s0)  [20.0000]
+80.0050: (board-truck driver1 truck1 s0)  [1.0000]
+81.0060: (drive-truck truck1 s0 s1 driver1)  [10.0000]
+91.0070: (disembark-truck driver1 truck1 s1)  [1.0000]
+End of plan print-out.
+Makespan: 92.0070
+States evaluated: 14
+Memory used (MB): 75
+Time needed (sec): 0.338000
+
+2019-09-20 16:35:52.869 [main] INFO  - Reached the plan count limit 1
+2019-09-20 16:35:52.870 [main] INFO  - Time spent in overheads related to creating LPs (ms): LongSummaryStatistics{count=0, sum=0, min=9223372036854775807, average=0.000000, max=-9223372036854775808}
+2019-09-20 16:35:52.870 [main] INFO  - Time spent in solving LPs (ms): LongSummaryStatistics{count=0, sum=0, min=9223372036854775807, average=0.000000, max=-9223372036854775808}
+2019-09-20 16:35:52.871 [main] INFO  - Unique double values generated 8, searched values 15 times
+2019-09-20 16:35:52.871 [main] INFO  - Time spent computing incremental numeric achievers LongSummaryStatistics{count=225, sum=3, min=0, average=0.013333, max=1}
+2019-09-20 16:35:52.871 [main] INFO  - Time spent computing previous state numeric fact evaluation LongSummaryStatistics{count=0, sum=0, min=9223372036854775807, average=0.000000, max=-9223372036854775808}
+2019-09-20 16:35:52.871 [main] INFO  - Time spent computing new state numeric state application LongSummaryStatistics{count=0, sum=0, min=9223372036854775807, average=0.000000, max=-9223372036854775808}
+2019-09-20 16:35:52.871 [main] INFO  - Time spent computing landmark analysis in TRPG LongSummaryStatistics{count=0, sum=0, min=9223372036854775807, average=0.000000, max=-9223372036854775808}
+2019-09-20 16:35:52.872 [main] INFO  - Time spent in k-shot analysis LongSummaryStatistics{count=0, sum=0, min=9223372036854775807, average=0.000000, max=-9223372036854775808}
+2019-09-20 16:35:52.872 [main] INFO  - Finished with C:\Users\pgregory\AppData\Local\Temp\domain-123765TMx3E4E9vhh.pddl C:\Users\pgregory\AppData\Local\Temp\problem-123760NUzqcBFW0d4.pddl

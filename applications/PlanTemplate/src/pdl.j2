@@ -1,0 +1,26 @@
+{% set location_objects = problem.objects|groupby(attribute='type')|selectattr('grouper','eq','location') %}
+{% for objects in location_objects %}
+Day , {{objects.list|sort(attribute='name')|join(' , ','name')}}
+{% endfor %}
+{% set on_locs = plan|selectattr("action_name","eq","onlocation-onlocation") %}
+{% for t in range(0,on_locs[on_locs|length-1].time|int+1) %}{% set the_subplan_groups = on_locs|selectattr('time','ge',t)|selectattr('time','lt',t+1)|groupby('action_param_1') %}
+{{t}} , {% for loc in location_objects[0].list|sort(attribute='name') %}{% set a = the_subplan_groups|selectattr('grouper','eq',loc.name) %} {% if a|length == 0 %} 0 {% else %} {{a[0].list|length}} {% endif %} , {% endfor %}
+
+{% endfor %}
+
+Day , {{location_objects[0].list|sort(attribute='name')|join(' , ','name')}}
+{% set on_locs = plan|selectattr("action_name","eq","rite-rff") %}
+{% for t in range(0,1) %}{% set the_subplan_groups = on_locs|selectattr('time','ge',t)|selectattr('time','lt',t+1)|groupby('action_param_1') %}
+{{t}} , {% for loc in location_objects[0].list|sort(attribute='name') %}{% set a = the_subplan_groups|selectattr('grouper','eq',loc.name) %} {% if a|length == 0 %} 0 {% else %} {{a[0].list|length}} {% endif %} , {% endfor %}
+
+{% endfor %}
+
+Day , {{location_objects[0].list|sort(attribute='name')|join(' , ','name')}}
+{% set on_locs = plan|rejectattr("action_name","eq","in-transit") %}
+{% for t in range(0,on_locs[on_locs|length-1].time|int+1) %}{% set the_subplan_groups = on_locs|selectattr('time','le',t+0.75)|selectattr('end_time','gt',t) %}
+{{t}} , {{the_subplan_groups|length}}
+{% endfor %}
+
+
+
+{{ problem.objects|length }}

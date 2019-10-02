@@ -1,0 +1,16 @@
+;;!domain: Depot
+;;!problem: depotprob1818
+
+0.0100: (lift hoist0 crate1 pallet0 depot0)
+0.0100: (lift hoist1 crate0 pallet1 distributor0)
+0.0200: (load hoist0 crate1 truck1 depot0)
+0.0300: (drive truck1 depot0 distributor0)
+0.0400: (load hoist1 crate0 truck1 distributor0)
+0.0500: (unload hoist1 crate1 truck1 distributor0)
+0.0600: (drive truck1 distributor0 distributor1)
+0.0600: (drop hoist1 crate1 pallet1 distributor0)
+0.0700: (unload hoist2 crate0 truck1 distributor1)
+0.0800: (drop hoist2 crate0 pallet2 distributor1)
+
+; Makespan: 0.008
+; Cost: 0.008

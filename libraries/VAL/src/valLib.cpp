@@ -136,7 +136,6 @@ class SimulatorValidator {
  private:
   Validator *vld;
   ActiveCtsEffects ace;
-  double theTime;
   Plan::timedActionSeq tas;
   map< double, Happening * > happenings;
   map< int, Action * > recorded;
@@ -150,6 +149,7 @@ class SimulatorValidator {
   vector< LPCSTR > allocated;
 
  public:
+  double theTime;
   SimulatorValidator(Validator *v)
       : vld(v), ace(v), theTime(-0.1), tc(0), vtrack(0) {
     v->prepareToExecute();
@@ -367,6 +367,7 @@ bool SimulatorValidator::executeNext() {
   }
   return isOk;
 }
+
 
 bool SimulatorValidator::getLit(const proposition *prp,
                                 const FastEnvironment *fenv) const {
@@ -598,6 +599,10 @@ void *makeValidatorFromFiles(LPCSTR domain, LPCSTR problem, double tol) {
 bool post(void *validator, int aID, LPCSTR action[], bool starting,
           double when) {
   return ((SimulatorValidator *)validator)->add(action, aID, starting, when);
+}
+
+double getTime(void *validator) {
+  return ((SimulatorValidator *)validator)->theTime;
 }
 
 bool executeNext(void *validator) {
